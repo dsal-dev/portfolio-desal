@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- Swiper Js -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header id="header" class="container py-3 w-full">
+      <div class="nav_content">
+        <div class="nav__brand">
+          <h1 class="text-lg text-slate-400 font-semibold">DESAL</h1>
+        </div>
+        <div class="nav__menu" id="nav__menu">
+          <ul class="lg:flex">
+            <li class="nav_items">
+              <a href="#home">Home</a>
+            </li>
+            <li class="nav_items">
+              <a href="#about">About</a>
+            </li>
+            <li class="nav_items">
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav_items">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="flex justify-end lg:hidden">
+            <i id="nav__close" class="uil uil-times text-lg text-slate-500"></i>
+          </div>
+        </div>
+        <div class="nav__btns lg:hidden">
+          <i
+            id="nav__toggle"
+            class="uil uil-apps text-lg text-slate-400 cursor-pointer"
+          ></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="section" id="home">
+      <div class="home_content">
+        <div class="home__icon">
+          <a
+            href="https://id.linkedin.com"
+            target="_blank"
+            class="block text-blue-500 text-lg"
+          >
+            <i class="uil uil-linkedin-alt"></i>
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            class="block text-blue-500 text-lg"
+          >
+            <i class="uil uil-github-alt"></i>
+          </a>
+        </div>
+        <div class="home__img">
+          <svg
+            class="fill-blue-500 w-52 lg:w-80"
+            viewBox="0 0 200 187"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask id="mask0" mask-type="alpha">
+              <path
+                d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+              />
+            </mask>
+            <g mask="url(#mask0)">
+              <path
+                d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+              />
+              <image href="./img/profil.png" x="40" y="5" class="w-44" />
+            </g>
+          </svg>
+        </div>
+        <div class="home__description">
+          <h1 class="text-4xl font-bold text-slate-800">Hi, I'am Desal</h1>
+          <h3 class="text-lg font-semibold mb-3 text-slate-600">
+            Frontend Developer
+          </h3>
+          <p class="text-base font-light mb-8 text-slate-800">
+            High level experience in web design and development knowledge,
+            producing quality work.
+          </p>
+          <a href="#contact" class="button">
+            Contact Me <i class="uil uil-message"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h1 class="title">About Me</h1>
+      <p class="subtitle">My Introduction</p>
+
+      <div class="about_content">
+        <div class="about__img">
+          <img src="./img/about.png" class="w-full mb-2 lg:w-3/4" />
+        </div>
+        <div class="about__description">
+          <p class="text-center mb-10 lg:text-left lg:text-lg">
+            Web developer, with extensive knowledge and years of experience,
+            working in web technologies and Ui / Ux design, delivering quality
+            work.
+          </p>
+          <div class="flex justify-between mb-4">
+            <div>
+              <h3 class="text-xl font-bold text-center lg:text-2xl">08+</h3>
+              <p class="text-base font-light text-center lg:text-lg">
+                Years<br />experience
+              </p>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-center lg:text-2xl">20+</h3>
+              <p class="text-base font-light text-center lg:text-lg">
+                Completed<br />projected
+              </p>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-center lg:text-2xl">05+</h3>
+              <p class="text-base font-light text-center lg:text-lg">
+                Companies<br />worked
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-center lg:justify-start">
+            <a href="#" class="button">
+              Download CV
+              <i class="uil uil-import"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <h1 class="title">Portfolio</h1>
+      <p class="subtitle">Most Recent Wornk</p>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper mb-10">
+          <!-- Portfolio 1-->
+          <div class="portfolio_content swiper-slide">
+            <div class="portfolio__img">
+              <img
+                src="./img/portfolio1.jpg"
+                class="w-3/4 lg:w-1/2 rounded-lg mb-5"
+              />
+            </div>
+            <div class="portfolio__description">
+              <h3 class="text-xl font-semibold">Modern Website</h3>
+              <p class="font-light mb-5">
+                I get a good impression, I carry out my project with all the
+                possible quality and attention and support 24 hours a day.
+              </p>
+              <a href="#" class="button">
+                Demo
+                <i class="uil uil-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Portfolio 2-->
+          <div class="portfolio_content swiper-slide">
+            <div class="portfolio__img">
+              <img
+                src="./img/portfolio2.jpg"
+                class="w-3/4 lg:w-1/2 rounded-lg mb-5"
+              />
+            </div>
+            <div class="portfolio__description">
+              <h3 class="text-xl font-semibold">Modern Website</h3>
+              <p class="font-light mb-5">
+                I get a good impression, I carry out my project with all the
+                possible quality and attention and support 24 hours a day.
+              </p>
+              <a href="#" class="button">Demo</a>
+            </div>
+          </div>
+
+          <!-- Portfolio 3-->
+          <div class="portfolio_content swiper-slide">
+            <div class="portfolio__img">
+              <img
+                src="./img/portfolio3.jpg"
+                class="w-3/4 lg:w-1/2 rounded-lg mb-5"
+              />
+            </div>
+            <div class="portfolio__description">
+              <h3 class="text-xl font-semibold">Modern Website</h3>
+              <p class="font-light mb-5">
+                I get a good impression, I carry out my project with all the
+                possible quality and attention and support 24 hours a day.
+              </p>
+              <a href="#" class="button">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next">
+          <i class="uil uil-angle-right-b text-4xl"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="uil uil-angle-left-b text-4xl"></i>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h1 class="title">Contact Me</h1>
+      <p class="subtitle">Get in touch</p>
+
+      <div class="contact_content">
+        <div class="contact__info mb-5">
+          <div class="flex items-center mb-4">
+            <i class="uil uil-phone-alt block text-blue-500 text-2xl mr-4"></i>
+            <div>
+              <h3 class="text-lg font-semibold">Call me</h3>
+              <p class="font-light">08966-4569-0000</p>
+            </div>
+          </div>
+
+          <div class="flex items-center mb-4">
+            <i
+              class="uil uil-envelope-alt block text-blue-500 text-2xl mr-4"
+            ></i>
+            <div>
+              <h3 class="text-lg font-semibold">Email</h3>
+              <p class="font-light">desal@mail.com</p>
+            </div>
+          </div>
+
+          <div class="flex items-center mb-4">
+            <i
+              class="uil uil-map-marker-alt block text-blue-500 text-2xl mr-4"
+            ></i>
+            <div>
+              <h3 class="text-lg font-semibold">Location</h3>
+              <p class="font-light">Indonesia - Jakarta Barat</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact__description">
+          <div class="lg:flex lg:justify-between">
+            <div class="bg-slate-200 py-2 px-4 rounded-lg mb-2 w-full mr-2">
+              <label for="name" class="text-sm font-light">Name</label>
+              <input
+                id="name"
+                type="text"
+                class="w-full block bg-transparent border-0 outline-none py-2"
+              />
+            </div>
+            <div class="bg-slate-200 py-2 px-4 rounded-lg mb-2 w-full">
+              <label for="email" class="text-sm font-light">Email</label>
+              <input
+                id="email"
+                type="email"
+                class="w-full block bg-transparent border-0 outline-none py-2"
+              />
+            </div>
+          </div>
+
+          <div class="bg-slate-200 py-2 px-4 rounded-lg mb-2">
+            <label for="project" class="text-sm font-light">Project</label>
+            <input
+              id="project"
+              type="text"
+              class="w-full block bg-transparent border-0 outline-none py-2"
+            />
+          </div>
+          <div class="bg-slate-200 py-2 px-4 rounded-lg mb-2">
+            <label for="message" class="text-sm font-light">Message</label>
+            <textarea
+              id="message"
+              rows="5"
+              class="w-full block bg-transparent border-0 outline-none py-2"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper Js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Main Js -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section {
+    @apply pt-24 pb-8 container;
+  }
+
+  .title {
+    @apply text-4xl font-semibold text-center;
+  }
+
+  .subtitle {
+    @apply text-sm font-light text-center mb-16;
+  }
+
+  .button {
+    @apply inline-block text-[16px] rounded-lg font-semibold text-white bg-blue-500 p-4;
+  }
+}
+
+@layer utilities {
+  /* Navbar */
+  .nav_content {
+    @apply flex justify-between items-center;
+  }
+
+  .nav__menu {
+    @apply fixed -top-[100%] left-0 w-full bg-white py-4 px-6 rounded-lg shadow-md transition duration-700;
+    @apply lg:static lg:w-auto lg:bg-transparent lg:rounded-none lg:shadow-none lg:p-0;
+  }
+
+  .nav_items {
+    @apply font-light text-slate-400 mr-5 py-2;
+    @apply hover:font-medium hover:text-slate-700;
+  }
+
+  /* Home */
+  .home_content {
+    @apply grid grid-flow-col grid-cols-12 items-center justify-center gap-5;
+  }
+
+  .home__icon {
+    @apply col-span-1 col-start-1;
+    @apply lg:row-start-1 lg:self-start;
+  }
+
+  .home__img {
+    @apply col-span-11 col-start-2 self-center;
+    @apply lg:row-start-1 lg:col-span-5 lg:col-start-8;
+  }
+
+  .home__description {
+    @apply col-span-12 col-start-1;
+    @apply lg:row-start-1 lg:col-span-4 lg:col-start-2 lg:self-start;
+  }
+
+  /* About */
+  .about_content {
+    @apply grid grid-cols-12 gap-4;
+  }
+
+  .about__img {
+    @apply col-span-12 col-start-1 row-start-1;
+    @apply lg:col-span-5 lg:col-start-2 lg:row-start-1;
+  }
+
+  .about__description {
+    @apply col-span-12 col-start-1 row-start-2;
+    @apply lg:col-span-5 lg:col-start-7 lg:row-start-1;
+  }
+
+  /* Portfolio */
+  .portfolio_content {
+    @apply grid grid-cols-12 gap-4;
+  }
+  .portfolio__img {
+    @apply col-span-12 col-start-1 row-start-1 flex justify-center;
+    @apply lg:col-span-5 lg:col-start-2 lg:row-start-1;
+  }
+  .portfolio__description {
+    @apply col-span-12 col-start-1 row-start-2 px-10 lg:px-0;
+    @apply lg:col-span-5 lg:col-start-7 lg:row-start-1;
+  }
+
+  /* Contact */
+  .contact_content {
+    @apply grid grid-cols-12 gap-4;
+  }
+
+  .contact__info {
+    @apply col-span-12 col-start-1 row-start-1;
+    @apply lg:col-span-3 lg:col-start-2 lg:row-start-1;
+  }
+
+  .contact__description {
+    @apply col-span-12 col-start-1 row-start-2;
+    @apply lg:col-span-7 lg:col-start-5 lg:row-start-1;
+  }
+}
+
+.show-menu {
+  @apply top-0;
+}
+
+.scroll-header {
+  @apply fixed top-0 left-0 right-0 bg-white shadow-sm z-50;
+}
+
+.swiper-button-next::after {
+  content: "";
+}
+.swiper-button-prev::after {
+  content: "";
+}
